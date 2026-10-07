@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bố cục trang web bằng HTML5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Thẻ <header> thay thế cho div id="head" -->
+      <header>
+        <h1>LOGO & BANNER</h1>
+      </header>
+
+      <!-- Thẻ <nav> thay thế cho div id="head-link" -->
+      <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Học viên</a>
+        <a href="#">Khóa học</a>
+        <a href="#">Về chúng tôi</a>
+        <a href="#">Liên hệ</a>
+      </nav>
+
+      <!-- Khung chứa các cột nội dung -->
+      <div class="content-wrapper">
+        <!-- Thẻ <aside> thay thế cho div id="left" -->
+        <aside class="sidebar-left">
+          <h3>Liên kết trái</h3>
+          <ul>
+            <li><a href="#">Tin tức mới</a></li>
+            <li><a href="#">Khóa học</a></li>
+            <li><a href="#">Sự kiện</a></li>
+          </ul>
+        </aside>
+
+        <!-- Thẻ <section> thay thế cho div id="content" -->
+        <section class="main-content">
+          <h2>Nội dung chính</h2>
+
+          <!-- Thẻ <article> đại diện cho từng bài viết/khối tin độc lập -->
+          <article>
+            <h3>Hot News</h3>
+            <p>Nội dung tin tức nổi bật...</p>
+          </article>
+
+          <article>
+            <h3>Photo Slide</h3>
+            <p>Bộ sưu tập hình ảnh...</p>
+          </article>
+        </section>
+
+        <!-- Thẻ <aside> thứ 2 thay thế cho div id="right" -->
+        <aside class="sidebar-right">
+          <h3>Thông tin bên phải</h3>
+          <div class="widget">Lịch</div>
+          <div class="widget">Biểu đồ</div>
+        </aside>
+      </div>
+
+      <!-- Thẻ <footer> thay thế cho div id="footer" -->
+      <footer>
+        <p>© 2026 CodeGym Practice - HTML5 Layout Semantic Tags</p>
+      </footer>
+    </div>
+  </body>
+</html>

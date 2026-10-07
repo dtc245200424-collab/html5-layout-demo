@@ -1,0 +1,120 @@
+/* Reset CSS cơ bản */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px 0;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+
+/* Định dạng thẻ <header> */
+header {
+  height: 100px;
+  background-color: #3498db;
+  color: #ffffff;
+  text-align: center;
+  line-height: 100px;
+  margin-bottom: 10px;
+}
+
+/* Định dạng thẻ <nav> */
+nav {
+  background-color: #2c3e50;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f1c40f;
+}
+
+/* Xử lý float cho khung chứa các cột */
+.content-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Cột trái: Thẻ <aside> */
+.sidebar-left {
+  width: 200px;
+  min-height: 400px;
+  float: left;
+  background-color: #e8f8f5;
+  border: 1px solid #a3e4d7;
+  padding: 10px;
+}
+
+.sidebar-left ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.sidebar-left ul li {
+  margin-bottom: 8px;
+}
+
+/* Cột giữa: Thẻ <section> */
+.main-content {
+  width: 520px;
+  min-height: 400px;
+  float: left;
+  margin: 0 10px;
+  background-color: #fef9e7;
+  border: 1px solid #f9e79f;
+  padding: 10px;
+}
+
+/* Khối bài viết: Thẻ <article> */
+article {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/* Cột phải: Thẻ <aside> */
+.sidebar-right {
+  width: 200px;
+  min-height: 400px;
+  float: right;
+  background-color: #eaf2f8;
+  border: 1px solid #aed6f1;
+  padding: 10px;
+}
+
+.widget {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/* Thẻ <footer> */
+footer {
+  clear: both;
+  margin-top: 10px;
+  background-color: #34495e;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
